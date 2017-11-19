@@ -1,0 +1,23 @@
+<br/><br/><br/>
+<h1>Pollywog user</h2>
+
+<div class="btn-group">
+<!--  <a href="" class="btn btn-navbar" ng-click="setSideBar()"><i class="fa fa-bug"></i> View SideBar</a> -->
+  <a href="" class="btn btn-navbar" ng-click="callServerRESTAPI(1)"><i class="fa fa-cogs"></i> Call REST API</a>
+  <a href="" class="btn btn-navbar" ng-click=""> </a>
+  <a href="" class="btn btn-navbar" ng-click="searchTheLab(0)"><i class="fa fa-building fa-navbar"></i> Search Lab Ground Floor</a>
+  <a href="" class="btn btn-navbar" ng-click="searchTheLab(1)"><i class="fa fa-building fa-navbar"></i> Search Lab 1st Floor</a>
+  <a href="" class="btn btn-navbar" ng-click=""> </a>
+  <span id="temp"><img class="btn btn-navbar" ng-src="/images/temp.png"></img>{{temp}}&#8451;</span>
+  <span id="humd"><img class="btn btn-navbar" ng-src="/images/humd.png"></img>{{humd}}</span>
+  <span id="demidog"><img class="btn btn-navbar" ng-src="/images/motion.png"></img># {{demidogs.length}}</span>
+</div>
+
+<div>
+  <p>Welcome to the portal between worlds.....</p>
+</div>
+<img src="images/demidog.jpg" height="25%" width="25%"/>
+<div>
+  <h1>{{demidogText}}</h1>
+  <h3 ng-repeat="demidog in demidogs">{{demidog}}</h3>
+</div>
